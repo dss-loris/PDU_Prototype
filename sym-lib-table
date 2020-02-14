@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name CoulombCounter)(type Legacy)(uri "/Volumes/LIMAC/School Fall 2019/Senior Year 1/CADs/main/CoulombCounter.lib")(options "")(descr "")(disabled))
+  (lib (name PDU_PROTOTYPE)(type Legacy)(uri ${KIPRJMOD}/PDU_PROTOTYPE.lib)(options "")(descr ""))
+  (lib (name Main-rescue)(type Legacy)(uri "/Volumes/LIMAC/School Winter 2020/Senior Year II/Senior Year 1/CADs/main-master/Main-rescue.lib")(options "")(descr ""))
+  (lib (name MSP-EXP430F5529LP-eagle-import)(type Legacy)(uri /Users/LiamMacDonald/Desktop/MSP-EXP430F5529LP/MSP-EXP430F5529LP-eagle-import.lib)(options "")(descr ""))
+  (lib (name PowerDistributionUnit-rescue)(type Legacy)(uri ${KIPRJMOD}/PowerDistributionUnit-rescue.lib)(options "")(descr ""))
+)

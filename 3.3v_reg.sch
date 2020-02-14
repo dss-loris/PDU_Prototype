@@ -1,0 +1,184 @@
+EESchema Schematic File Version 4
+LIBS:PowerDistributionUnit-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PowerDistributionUnit-rescue:LM5165Y-Regulator_Switching U4.1
+U 1 1 5E30D9EB
+P 5600 4200
+F 0 "U4.1" H 5600 4767 50  0000 C CNN
+F 1 "LM5165Y" H 5600 4676 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PVSON-N10_ThermalVias" H 5650 3750 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm5165.pdf" H 5600 4750 50  0001 C CNN
+	1    5600 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4.1
+U 1 1 5E30E6F0
+P 4450 4050
+F 0 "C4.1" H 4565 4096 50  0000 L CNN
+F 1 "13uF" H 4565 4005 50  0000 L CNN
+F 2 "" H 4488 3900 50  0001 C CNN
+F 3 "~" H 4450 4050 50  0001 C CNN
+	1    4450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4.2
+U 1 1 5E3106D8
+P 6700 4050
+F 0 "C4.2" H 6815 4096 50  0000 L CNN
+F 1 "13uF" H 6815 4005 50  0000 L CNN
+F 2 "" H 6738 3900 50  0001 C CNN
+F 3 "~" H 6700 4050 50  0001 C CNN
+	1    6700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L4.1
+U 1 1 5E311D88
+P 6150 3900
+F 0 "L4.1" V 6340 3900 50  0000 C CNN
+F 1 "373uH" V 6249 3900 50  0000 C CNN
+F 2 "" H 6150 3900 50  0001 C CNN
+F 3 "~" H 6150 3900 50  0001 C CNN
+	1    6150 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 3900 6300 3900
+Wire Wire Line
+	6700 3900 6700 3950
+Connection ~ 6700 3900
+Connection ~ 6300 3900
+Wire Wire Line
+	6300 3900 6700 3900
+Wire Wire Line
+	5950 4100 6000 4100
+Wire Wire Line
+	6300 4100 6300 3900
+Connection ~ 6000 4100
+Wire Wire Line
+	6000 4100 6300 4100
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E313391
+P 6700 4200
+F 0 "#PWR?" H 6700 3950 50  0001 C CNN
+F 1 "GNDD" H 6704 4045 50  0000 C CNN
+F 2 "" H 6700 4200 50  0001 C CNN
+F 3 "" H 6700 4200 50  0001 C CNN
+	1    6700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3900 7100 3900
+Text HLabel 7100 3900 2    50   Input ~ 0
+3.3V
+$Comp
+L Device:R R4.1
+U 1 1 5E31380F
+P 6150 4400
+F 0 "R4.1" V 6250 4400 50  0000 C CNN
+F 1 "100k" V 6350 4400 50  0000 C CNN
+F 2 "" V 6080 4400 50  0001 C CNN
+F 3 "~" H 6150 4400 50  0001 C CNN
+	1    6150 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 4400 6300 4400
+Wire Wire Line
+	6450 4400 6450 4500
+Connection ~ 6300 4400
+Wire Wire Line
+	6300 4400 6450 4400
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E31432F
+P 6450 4500
+F 0 "#PWR?" H 6450 4250 50  0001 C CNN
+F 1 "GNDD" H 6454 4345 50  0000 C CNN
+F 2 "" H 6450 4500 50  0001 C CNN
+F 3 "" H 6450 4500 50  0001 C CNN
+	1    6450 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3900 5200 3900
+Connection ~ 5200 3900
+Wire Wire Line
+	5200 3900 4450 3900
+Wire Wire Line
+	4450 3900 4450 3950
+Connection ~ 4450 3900
+Wire Wire Line
+	4450 3900 4100 3900
+Text HLabel 4100 3900 0    50   Input ~ 0
+5V
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E315059
+P 4450 4200
+F 0 "#PWR?" H 4450 3950 50  0001 C CNN
+F 1 "GNDD" H 4454 4045 50  0000 C CNN
+F 2 "" H 4450 4200 50  0001 C CNN
+F 3 "" H 4450 4200 50  0001 C CNN
+	1    4450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4300 4750 4300
+Wire Wire Line
+	4750 4300 4750 4350
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E3158C5
+P 4750 4350
+F 0 "#PWR?" H 4750 4100 50  0001 C CNN
+F 1 "GNDD" H 4754 4195 50  0000 C CNN
+F 2 "" H 4750 4350 50  0001 C CNN
+F 3 "" H 4750 4350 50  0001 C CNN
+	1    4750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4500 5050 4500
+Wire Wire Line
+	5050 4500 5050 4550
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E3163F8
+P 5050 4550
+F 0 "#PWR?" H 5050 4300 50  0001 C CNN
+F 1 "GNDD" H 5054 4395 50  0000 C CNN
+F 2 "" H 5050 4550 50  0001 C CNN
+F 3 "" H 5050 4550 50  0001 C CNN
+	1    5050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E3168B5
+P 5500 4700
+F 0 "#PWR?" H 5500 4450 50  0001 C CNN
+F 1 "GNDD" H 5504 4545 50  0000 C CNN
+F 2 "" H 5500 4700 50  0001 C CNN
+F 3 "" H 5500 4700 50  0001 C CNN
+	1    5500 4700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
